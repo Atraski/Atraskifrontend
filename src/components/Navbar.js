@@ -54,7 +54,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar navbar-expand-md navbar-dark  ${isNavOpen ? 'show' : ''}`}>
+    <nav className={`navbar navbar-expand-lg navbar-dark  ${isNavOpen ? 'show' : ''}`}>
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/Atraski">
           <img
@@ -115,7 +115,7 @@ const Navbar = () => {
                       style={{color:'black'}}>
                         Digital Marketing
                       </NavLink>
-                      <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}>Social Media Manage</p>
+                      <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}>Social Media Manager</p>
                       <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}>Running Ads</p>
                       <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}>Off Page SEO  and On Page SEO</p>
                     </li>
@@ -199,7 +199,7 @@ const Navbar = () => {
                     <li>
                       <NavLink
                         className="dropdown-item"
-                        to="/production"
+                        to="/fash"
                         onClick={() => {
                           closeDropdowns();
                           handleNavClick();
@@ -215,7 +215,7 @@ const Navbar = () => {
                     <li>
                       <NavLink
                         className="dropdown-item"
-                        to="/web"
+                        to="/intellectual"
                         onClick={() => {
                           closeDropdowns();
                           handleNavClick();
@@ -228,7 +228,7 @@ const Navbar = () => {
                       <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}>Business E-Shower</p>
 
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink
                         className="dropdown-item"
                         to="/mice"
@@ -241,18 +241,18 @@ const Navbar = () => {
                       </NavLink>
                       <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}> Incentives, Conferences</p>
 
-                    </li>
+                    </li> */}
 
                     <li>
                       <NavLink
                         className="dropdown-item"
-                        to="/mice"
+                        to="/eventexhibition"
                         onClick={() => {
                           closeDropdowns();
                           handleNavClick();
                         }}
                         style={{color:'black'}}>
-                        Events & Exhi
+                        Events & Exhibition
                       </NavLink>
                       <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}> Events</p>
                       <p style={{ color: 'black', fontFamily:'serif', fontSize:'0.8rem',marginLeft:'20px', marginBottom:'10px' }}> Exhibition</p>
