@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import offer1 from './images/socialmediamarketing.jpg'
 import offer2 from './images/socialmediaadvertising.jpg'
 import offer3 from './images/seo.jpg'
+import  '../index.css';
 
 
 
@@ -61,21 +62,21 @@ const Service = () => {
           <Col md={4}>
             <div className="image-container" onClick={handleImageClick} style={{cursor:'pointer'}}>
               <img src={offer1} alt="Image 1" className="img-fluid" />
-              <h2 className="image-heading" style={{position: 'absolute', fontSize:'25px',color:'black',top: 100, left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Social Media Marketing</h2>
+              <h2 className="image-heading" style={{position: 'absolute', fontSize:'25px',color:'black',top: 100, left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Social Media Manager</h2>
 
             </div>
           </Col>
           <Col md={4}>
             <div className="image-container" onClick={handleImageClick2} style={{cursor:'pointer'}}>
               <img src={offer2} alt="Image 2" className="img-fluid" />
-              <h2 className="image-heading" style={{position: 'absolute', fontSize:'25px',color:'black',top: 100, left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Social Media Advertisement</h2>
+              <h2 className="image-heading" style={{position: 'absolute', fontSize:'25px',color:'black',top: 100, left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Running Ads</h2>
 
             </div>
           </Col>
           <Col md={4}>
             <div className="image-container" onClick={handleImageClick3} style={{cursor:'pointer'}}>
               <img src={offer3} alt="Image 3" className="img-fluid" />
-              <h2 className="image-heading" style={{position: 'absolute', color:'black',top: 100,fontSize:'25px', left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Search Engine Optimization</h2>
+              <h2 className="image-heading" style={{position: 'absolute', color:'black',top: 100,fontSize:'25px', left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Off Page SEO and On Page SEO</h2>
 
             </div>
           </Col>
@@ -86,7 +87,7 @@ const Service = () => {
             <Modal.Title>What We Offer</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>SocialSocial Media Manage:</h4>
+            <h4>Social Media Manager:</h4>
             <h9>Social media management is the practice of using social media platforms to promote products, services, or content.
 Our services involve creating, curating, and posting content across various social media platforms, engaging with the audience, analyzing performance metrics, and adapting the strategy based on insights. We also manage advertising campaigns, monitor trends, and work to enhance the brand's online presence on various platforms like Facebook, Instagram, and Twitter to reach potential customers. Social Media Management plays a crucial role in maintaining a positive and consistent image for the organization on social media while driving engagement and achieving marketing goals.
 </h9>
