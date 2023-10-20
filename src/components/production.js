@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Modal, Button} from 'react-bootstrap';
 import { Link} from 'react-router-dom';
-import offer1 from './images/commercialshoot.jpg'
+import offer1 from './images/my voice goods and service.PNG'
 import offer2 from './images/productshoot.jpg'
 import offer3 from './images/podcastshoot.jpg'
 import '../index.css'
@@ -24,63 +24,52 @@ function Prod() {
   };
 
 
-  const handleModalClose2 = () => {
-    setShowModal2(false);
-  };
+  // const handleModalClose2 = () => {
+  //   setShowModal2(false);
+  // };
 
-  const handleImageClick2 = () => {
-    setShowModal2(true);
-  };
+  // const handleImageClick2 = () => {
+  //   setShowModal2(true);
+  // };
 
 
-  const handleModalClose3 = () => {
-    setShowModal3(false);
-  };
+  // const handleModalClose3 = () => {
+  //   setShowModal3(false);
+  // };
 
-  const handleImageClick3 = () => {
-    setShowModal3(true);
-  };
+  // const handleImageClick3 = () => {
+  //   setShowModal3(true);
+  // };
   
 
     return (
         <>
            <Container>
-        <h1 className="mt-5 text-white text-center">Production</h1>
+        <h1 className="mt-5 text-white text-center">My City My Voice</h1>
         <h3 className="mt-3  text-white text-center">What We Offer</h3>
-        <Row className="mt-4">
+        <Row className="my-4" style={{display:"flex", justifyContent:'center'}}>
           <Col md={4}>
             <div className="image-container" onClick={handleImageClick} style={{cursor:'pointer'}}  >
               <img src={offer1} alt="Image 1" className="img-fluid" />
-              <h2 className="image-heading" style={{position: 'absolute', color:'black',top: 100, left: 0, width: '100%', textAlign: 'center',fontSize:'25px', backgroundColor:'#F9F5F6'}}>Commercial Shoot</h2>
+              <h2 className="image-heading" style={{position: 'absolute', color:'black',top: 100, left: 0, width: '100%', textAlign: 'center',fontSize:'25px', backgroundColor:'#F9F5F6'}}>Goods and Services</h2>
 
             </div>
           </Col>
-          <Col md={4}>
-            <div className="image-container" onClick={handleImageClick2} style={{cursor:'pointer'}}>
-              <img src={offer2} alt="Image 2" className="img-fluid" />
-              <h2 className="image-heading" style={{position: 'absolute', color:'black',top: 100, left: 0, width: '100%', textAlign: 'center',fontSize:'25px', backgroundColor:'#F9F5F6'}}>Product Shoot</h2>
-
-            </div>
-          </Col>
-          <Col md={4}>
-            <div className="image-container" onClick={handleImageClick3} style={{cursor:'pointer'}}>
-              <img src={offer3} alt="Image 3" className="img-fluid" />
-              <h2 className="image-heading" style={{position: 'absolute', color:'black',top: 100, left: 0, width: '100%', textAlign: 'center',fontSize:'25px', backgroundColor:'#F9F5F6'}}>Podcast Shoot</h2>
-
-            </div>
-          </Col>
-          
         </Row>
-        </Container>
+        
 
 
         <Modal show={showModal} onHide={handleModalClose} dialogClassName="custom-modal w-1000">
           <Modal.Header closeButton >
             <Modal.Title>What We Offer:</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="modal">
-            <h4>Commercial Shoots:</h4>
-            <h6 style={{color:'grey' , fontSize:'15px'}}>Commercial shoots are an effective way for businesses to create compelling visual content for marketing campaigns. By producing high-quality videos or images, businesses can showcase their products or services in an engaging and professional manner. Commercial shoots enable businesses to tell their brand story, evoke emotions, and capture the attention of their target audience. The visual appeal of commercial shoots helps in building brand recognition, attracting new customers, and increasing conversions. Additionally, commercial shoots offer versatility, allowing businesses to repurpose content for various marketing channels, including television, social media, and websites. Overall, commercial shoots are an essential tool for businesses to create impactful marketing materials that drive success.
+          <Modal.Body>
+            <h4>Goods and Services:</h4>
+            <h6 style={{color:'grey' , fontSize:'15px'}}>My City My Voice is a platform committed to blowing the wind beneath the wings of aspiring writers and2 budding stand-up speakers to project their art across the nation.
+We have successfully executed our events in 12+ cities building a community of more than 1000 people. Our county has a huge number of talented artist. We are not only encouraging their talents but giving them opportunities to brighten their skills.
+Laying out the best of the maestros from the core of the country. We provide the opportunity for you to portray your competence and abide by the famous saying “ability is nothing without opportunity”, so resolve to seize it!
+
+
  </h6>
           </Modal.Body>
           <Modal.Footer>
@@ -90,10 +79,10 @@ function Prod() {
           </Modal.Footer>
         </Modal>
 
+        </Container>
 
 
-
-        <Modal show={showModal2} onHide={handleModalClose2} dialogClassName="custom-modal w-1000">
+        {/* <Modal show={showModal2} onHide={handleModalClose2} dialogClassName="custom-modal w-1000">
           <Modal.Header closeButton >
             <Modal.Title>What We Offer:</Modal.Title>
           </Modal.Header>
@@ -108,10 +97,10 @@ function Prod() {
               Close
             </Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
 
 
-
+{/* 
         <Modal show={showModal3} onHide={handleModalClose3} dialogClassName="custom-modal w-1000">
           <Modal.Header closeButton >
             <Modal.Title>What We Offer:</Modal.Title>
@@ -125,7 +114,7 @@ function Prod() {
               Close
             </Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
 
 
 
