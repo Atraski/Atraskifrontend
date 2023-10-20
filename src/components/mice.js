@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { Container, Row, Col, Modal, Button} from 'react-bootstrap';
 import { Link} from 'react-router-dom';
-import offer1 from './images/Annual Business Meetings.jpg'
+import offer1 from './images/Incentives, Conferences.PNG'
 import offer2 from './images/Business events..jpg'
 // import offer3 from './imagegallery/seo.png'
 const Mice = () => {
@@ -19,29 +19,31 @@ const Mice = () => {
   };
 
 
-  const handleModalClose2 = () => {
-    setShowModal2(false);
-  };
+  // const handleModalClose2 = () => {
+  //   setShowModal2(false);
+  // };
 
-  const handleImageClick2 = () => {
-    setShowModal2(true);
-  };
+  // const handleImageClick2 = () => {
+  //   setShowModal2(true);
+  // };
   return (
     <div>
       <Container>
-        <h1 className="mt-5 text-white text-center">MICE</h1>
+        <h1 className="mt-5 text-white text-center">Book Our Stays</h1>
         <h3 className="mt-3  text-white text-center">What We Offer</h3>
-        <Row className="mt-4" style={{pointerEvents:'cursor', display:'flex' , justifyContent:'center'}}>
+        <Row className="my-4" style={{pointerEvents:'cursor', display:'flex' , justifyContent:'center'}}>
           <Col md={4} style={{cursor:'pointer'}}>
             <div className="image-container" onClick={handleImageClick}>
               <img src={offer1} alt="Image 1" className="img-fluid" />
+              <h2 className="image-heading" style={{position: 'absolute',fontSize:'25px', color:'black',top: 100, left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Incentives, Conferences</h2>
+
             </div>
           </Col>
-          <Col md={4} style={{cursor:'pointer'}}>
+          {/* <Col md={4} style={{cursor:'pointer'}}>
             <div className="image-container" onClick={handleImageClick2}>
               <img src={offer2} alt="Image 2" className="img-fluid" />
             </div>
-          </Col>
+          </Col> */}
           
         </Row>
 
@@ -50,8 +52,11 @@ const Mice = () => {
             <Modal.Title>What We Offer</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>Business Events:</h4>
-            <h9>Business events are a valuable platform for businesses to connect, engage, and expand their networks. Whether it's conferences, trade shows, or networking events, business events offer numerous benefits. They provide opportunities for businesses to showcase their products or services, gain exposure, and attract potential customers. Business events foster face-to-face interactions, enabling businesses to build valuable relationships with industry professionals, partners, and clients. These events also offer a platform for knowledge sharing, learning about industry trends, and gaining insights from experts. Moreover, business events can lead to collaborations, partnerships, and new business opportunities, ultimately driving growth and success.</h9>
+            <h4>Incentives, Conferences:</h4>
+            <h9>Our Atstay Travel Agency provides incentives which often provide tools and software to track and manage travel expenses, making it easier for businesses to monitor and analyze their travel spending.
+We can organize and manage group travel for conferences, meetings, or corporate events.
+Our agency may assist with visa applications, passport renewals, and other necessary documentation for international travel.
+We can offer advice and consultation on creating or updating corporate travel policies to improve efficiency and cost-effectiveness.</h9>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleModalClose}>
@@ -62,7 +67,7 @@ const Mice = () => {
 
 
 
-        <Modal show={showModal2} onHide={handleModalClose2} dialogClassName="custom-modal w-1000" >
+        {/* <Modal show={showModal2} onHide={handleModalClose2} dialogClassName="custom-modal w-1000" >
           <Modal.Header closeButton>
             <Modal.Title>What We Offer</Modal.Title>
           </Modal.Header>
@@ -76,7 +81,7 @@ const Mice = () => {
               Close
             </Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
       </Container>
 
 
