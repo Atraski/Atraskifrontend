@@ -5,7 +5,8 @@
 import subimg1 from './imagegallery/dealer.png'
 import subimg2 from './imagegallery/stall.png'
 import subimg3 from './imagegallery/launch.png'
-import subimg4 from './imagegallery/atlbtl.png'
+import subimg4 from './imagegallery/mediaoutreach.png'
+
 // import eventimg1 from './imagegallery/w1.jpeg'
 // import eventimg2 from './imagegallery/w2.jpeg'
 // import eventimg3 from './imagegallery/w3.jpeg'
@@ -95,14 +96,13 @@ function Event1() {
                 <h1 style={headingStyle}></h1>
             </header> */}
             <div className="container">
-              <h1 className="text-center mb-3 font-weight-bold">Events</h1>
-                <h2 className="text-center">Unforgettable moments, boundless possibilities</h2>
+              <h1 className="text-center mb-3 font-weight-bold">Public Relation</h1>
             </div>
             {/* cards */}
             <Container>
         {/* <h1 className="mt-5 text-white text-center"></h1> */}
-        <h3 className="mt-3  text-white text-center">What We Offer</h3>
-        <Row className="mt-4" style={{pointerEvents:'cursor'}}>
+        <h4 className="mt-3  text-white text-center">What We Offer</h4>
+        {/* <Row className="mt-4" style={{pointerEvents:'cursor'}}>
           <Col md={3}>
             <div className="image-container" onClick={handleImageClick} style={{cursor:'pointer'}}>
               <img src={subimg1} alt="Image 1" className="img-fluid" />
@@ -118,14 +118,21 @@ function Event1() {
               <img src={subimg3} alt="Image 3" className="img-fluid" />
             </div>
           </Col>
-          <Col md={3}>
-            <div className="image-container" onClick={handleImageClick4} style={{cursor:'pointer'}}>
-              <img src={subimg4} alt="Image 3" className="img-fluid" />
-            </div>
-          </Col>
-        </Row>
+          <Col md={3}> */}
+          
+          <Row  style={{display:'flex' , justifyContent:'center'}}>
+            <Col md={4} className="my-4">
+            <div className="image-container" onClick={handleImageClick4} style={{cursor:'pointer',textAlign:'center',display:"flex",justifyContent:"center"}}>
+              <img src={subimg4} alt="Image 3" className="img-fluid" style={{width:'500px', alignItems:'center'}}/>
+              <h2 className="image-heading" style={{position: 'absolute', fontSize:'25px',color:'black',top: 100, left: 0, width: '100%', textAlign: 'center', backgroundColor:'#F9F5F6'}}>Media Outreach</h2>
 
-        <Modal show={showModal} onHide={handleModalClose} dialogClassName="custom-modal w-1000" >
+            </div>
+            </Col>
+            </Row>
+          
+       
+
+        {/* <Modal show={showModal} onHide={handleModalClose} dialogClassName="custom-modal w-1000" >
           <Modal.Header closeButton>
             <Modal.Title>What We Offer</Modal.Title>
           </Modal.Header>
@@ -174,7 +181,7 @@ function Event1() {
               Close
             </Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
 
 
         <Modal show={showModal4} onHide={handleModalClose4} dialogClassName="custom-modal w-1000" >
@@ -182,8 +189,10 @@ function Event1() {
             <Modal.Title>What We Offer</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>ATL & BTL Activities:</h4>
-            <h9>ATL (Above the Line) and BTL (Below the Line) activities are essential components of a comprehensive marketing strategy. ATL activities, such as television, radio, and print advertising, enable businesses to reach a wide audience and build brand awareness on a large scale. BTL activities, including direct mail, email marketing, and experiential marketing, focus on targeted engagement with specific customer segments. These activities offer personalized interactions, generate leads, and drive conversions. By combining both ATL and BTL activities, businesses can create a holistic marketing approach that maximizes reach, builds customer relationships, and ultimately leads to business growth.</h9>
+            <h4>Media Outreach:</h4>
+            <h9>Media outreach refers to the strategic efforts and activities undertaken by individuals, organizations, or businesses to connect and engage with various forms of media, such as newspapers, magazines, television, radio, online publications, and social media platforms. We aim to achieve the goal of media outreach is to gain coverage and exposure for a specific message, story, product, event, or initiative. This can involve pitching press releases, arranging interviews, sending media kits, and building relationships with journalists and influencers to amplify the reach and impact of the content.
+It is the strategic management of communication between an organization and its target audience, with the aim of building and maintaining a positive reputation. We help in activities such as media relations, crisis management, event planning, and social media engagement to influence public perception and foster goodwill.
+</h9>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleModalClose4}>
