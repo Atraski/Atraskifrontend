@@ -50,6 +50,9 @@ import Cartview from './components/Cartview'
 import PaymentForm from './components/PaymentForm'
 import ProductPage from './components/Productpage'
 import ProductViewPage from './components/ProductViewPage'
+import Fash from './components/fash';
+import Intellectual from './components/Intellectual';
+import EventExhibition from './components/EventExhibition';
 
 
 
@@ -92,10 +95,13 @@ function App() {
           <Route path="/fashion" element={<Section1 />} />
           <Route path="/googleform" element={<GoogleForm />} />
           <Route path="/bloggersMelaDelhi" element={<BloggerMelaDelhi />} />
-                 <Route path="/Cartview" element={<Cartview/>} />
-                 <Route path="/paymentform" element={<PaymentForm />} />
-                 <Route path="/blogger1/:id" element={<ProductPage/>} />
-                 <Route path="/productviewpage" element={<ProductViewPage/>} />
+          <Route path="/Cartview" element={<Cartview/>} />
+          <Route path="/paymentform" element={<PaymentForm />} />
+          <Route path="/blogger1/:id" element={<ProductPage/>} />
+          <Route path="/productviewpage" element={<ProductViewPage/>} />
+          <Route path="/fash" element={<Fash/>} />
+          <Route path="/intellectual" element={<Intellectual/>} />
+          <Route path="/eventexhibition" element={<EventExhibition/>} />
 
 
 
