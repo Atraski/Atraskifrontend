@@ -243,7 +243,7 @@ const Main2 = () => {
         </div>
         <div class="parent">
           {/* <div class="bottom"><i class="fa-light fa-message-bot"onClick={()=>navigate("/chat")}></i><br></br></div> */}
-          <div class="bottom"><i class="fa-solid fa-comment" onClick={() => navigate("/chat")}></i><div className='mx-2'>Chat</div><br></br></div>
+          <div class="bottom" onClick={() => navigate("/chat")}><i class="fa-solid fa-comment" ></i><div className='mx-2'>Chat</div><br></br></div>
 
         </div>
       </div>
