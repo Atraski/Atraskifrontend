@@ -300,11 +300,11 @@ const Navbar = () => {
                 E-Shower
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/careers" onClick={handleNavClick}>
-                Careers
-              </NavLink>
-            </li>
+            // <li className="nav-item">
+            //   <NavLink className="nav-link" to="/careers" onClick={handleNavClick}>
+            //     Careers
+            //   </NavLink>
+            // </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/ContactUs" onClick={handleNavClick}>
                 Contact us
