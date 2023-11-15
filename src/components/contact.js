@@ -90,7 +90,7 @@ const ContactUs = () => {
           <div className="map-part">
             {/* <p className="text-blk map-contactus-head">Reach us at</p> */}
             <p className="text-blk map-contactus-subhead">
-            Conact with us on social media </p>
+            Contact with us on social media </p>
             <div className="social-media-links mob">
               <a className="social-icon-link" href="https://twitter.com/AtraskiOfficial">
               <img className="link-img image-block" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png" alt="Twitter" />
